@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint \"src/**/*\"",
     "build": "tsc",
-    "test": "mocha -r ts-node/register src/test.ts --exit"
+    "test": "npm run lint && mocha -r ts-node/register src/test.ts --exit"
   },
   "repository": {
     "type": "git",

@@ -6,8 +6,7 @@ service cloud.firestore {
     }
 
     match /users/{user} {
-      allow read: if request.auth.uid == user;
-      allow delete: if false;
+      allow create: if (request.auth.uid == user);
       allow update: if request.resource.data.uid == resource.data.uid;
     }
   }
