@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Unit Testing cloud firestore rules",
+  "main": "lib/test.js",
+  "scripts": {
+    "lint": "eslint \"src/**/*\"",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register src/test.ts --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarltonK/firebase_coverage.git"
+  },
+  "author": "Mark Carlton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarltonK/firebase_coverage/issues"
+  },
+  "homepage": "https://github.com/CarltonK/firebase_coverage#readme",
+  "devDependencies": {
+    "@firebase/testing": "^0.20.11",
+    "@types/mocha": "^8.2.2",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^3.8.0"
+  }
+}
